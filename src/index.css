@@ -38,5 +38,11 @@ object-fit: cover;
 
 .filter li button:hover{
   background-color: slateblue;
-  
+
+}
+.galeryrepper{
+  padding:  5% 10%;
+}
+.item img{
+  border-radius: 15px;
 }
