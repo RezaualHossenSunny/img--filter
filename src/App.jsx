@@ -10,14 +10,25 @@ function App() {
     
   }, []);
   
-  console.log(collection);
+ const garlary_filter=(itemdata)=>{
+  const filterdata = garlary.filter((item)=> item.title == itemdata)
+  setData(filterdata)
+ }
   return (
     <>
       <div className="galeryrepper">
+      <div className="filter">
+        <ul>
+          <li><button onClick={()=> setData(garlary)}>ALL</button></li>
+          {
+            collection.map((item)=> <li><button onClick={()=> garlary_filter(item)}>{item}</button></li>)
+          }
+        </ul>
+      </div>
         <div className="galarycontainer">
           {data.map((item) => (
-            <div className="item">
-              <img src={item.img} key={item.id} />
+            <div key={item.id}  className="item">
+              <img src={item.img}  />
             </div>
           ))}
         </div>

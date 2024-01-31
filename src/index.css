@@ -12,3 +12,31 @@ object-fit: cover;
 .galeryrepper{
   padding: 10% 10%;
 }
+
+.filter ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 4px;
+  list-style: none;
+  gap: 20px;
+}
+
+.filter li button{
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: tomato;
+  color: antiquewhite;
+  font-size: large;
+  border-color: azure;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.filter li button:hover{
+  background-color: slateblue;
+  
+}
